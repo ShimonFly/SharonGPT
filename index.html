@@ -7,12 +7,18 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f6f6f6;
+      background-color: #343541;
+      color: #ececf1;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       min-height: 100vh;
+      padding: 40px;
+    }
+    img {
+      width: 80px;
+      margin-bottom: 20px;
     }
     h1 {
       margin-bottom: 20px;
@@ -21,6 +27,8 @@
       padding: 10px;
       width: 300px;
       font-size: 16px;
+      border-radius: 5px;
+      border: none;
     }
     button {
       background-color: #ff6666;
@@ -30,6 +38,7 @@
       font-size: 16px;
       cursor: pointer;
       margin-top: 10px;
+      border-radius: 5px;
     }
     #response {
       margin-top: 20px;
@@ -39,6 +48,7 @@
   </style>
 </head>
 <body>
+  <img src="logo.svg" alt="SharonGPT Logo" />
   <h1>SharonGPT</h1>
   <input type="text" id="question" placeholder="Ask Sharon anything..." />
   <button onclick="answer()">Ask Sharon</button>
